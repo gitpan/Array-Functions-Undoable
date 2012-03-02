@@ -1,5 +1,5 @@
 ---
-abstract: 'Array manipulation functions which supports undo operation'
+abstract: 'Array manipulation functions that support undo operation'
 author:
   - 'Steven Haryanto <stevenharyanto@gmail.com>'
 build_requires:
@@ -7,17 +7,17 @@ build_requires:
 configure_requires:
   Module::Build: 0.3601
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.200004, CPAN::Meta::Converter version 2.110580'
+generated_by: 'Dist::Zilla version 4.300006, CPAN::Meta::Converter version 2.113640'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Array-Functions-Undoable
 requires:
-  Sub::Spec: 0.13
+  Rinci: 1.1.0
   Test::More: 0.96
   perl: 5.010000
 resources:
   homepage: http://search.cpan.org/dist/Array-Functions-Undoable/
   repository: http://github.com/sharyanto/perl-Array-Functions-Undoable
-version: 0.01
+version: 0.02

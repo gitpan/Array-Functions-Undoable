@@ -1,8 +1,4 @@
 package Array::Functions::Undoable;
-BEGIN {
-  $Array::Functions::Undoable::VERSION = '0.01';
-}
-# ABSTRACT: Array manipulation functions which supports undo operation
 
 use 5.010;
 use strict;
@@ -11,6 +7,8 @@ use warnings;
 require Exporter;
 our @ISA       = qw(Exporter);
 our @EXPORT_OK = qw(afu);
+
+our $VERSION = '0.02'; # VERSION
 
 our %SPEC;
 
@@ -101,17 +99,18 @@ sub afu {
 }
 
 1;
+# ABSTRACT: Array manipulation functions that support undo operation
 
 
 =pod
 
 =head1 NAME
 
-Array::Functions::Undoable - Array manipulation functions which supports undo operation
+Array::Functions::Undoable - Array manipulation functions that support undo operation
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
@@ -153,8 +152,8 @@ version 0.01
 
 This module provides the usual array manipulation functionalities like for
 popping, pushing, splicing, but with undo capability. It is currently used just
-for testing the L<Sub::Spec> undo protocol and other Sub::Spec modules like
-L<Sub::Spec::Runner>.
+for testing the L<Rinci::function> undo protocol and L<Perinci> modules like
+L<Perinci::CmdLine>.
 
 =head1 FUNCTIONS
 
@@ -199,15 +198,13 @@ Operation on array.
 
 =head1 SEE ALSO
 
-L<Sub::Spec>
-
 =head1 AUTHOR
 
 Steven Haryanto <stevenharyanto@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Steven Haryanto.
+This software is copyright (c) 2012 by Steven Haryanto.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

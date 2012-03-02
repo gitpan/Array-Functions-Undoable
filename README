@@ -1,9 +1,9 @@
 NAME
-    Array::Functions::Undoable - Array manipulation functions which supports
+    Array::Functions::Undoable - Array manipulation functions that support
     undo operation
 
 VERSION
-    version 0.01
+    version 0.02
 
 SYNOPSIS
      use Array::Functions::Undoable qw(afu);
@@ -43,8 +43,8 @@ SYNOPSIS
 DESCRIPTION
     This module provides the usual array manipulation functionalities like
     for popping, pushing, splicing, but with undo capability. It is
-    currently used just for testing the Sub::Spec undo protocol and other
-    Sub::Spec modules like Sub::Spec::Runner.
+    currently used just for testing the Rinci::function undo protocol and
+    Perinci modules like Perinci::CmdLine.
 
 FUNCTIONS
     None of the functions are exported by default, but they are exportable.
@@ -80,13 +80,11 @@ FUNCTIONS
         Operation on array.
 
 SEE ALSO
-    Sub::Spec
-
 AUTHOR
     Steven Haryanto <stevenharyanto@gmail.com>
 
 COPYRIGHT AND LICENSE
-    This software is copyright (c) 2011 by Steven Haryanto.
+    This software is copyright (c) 2012 by Steven Haryanto.
 
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.
